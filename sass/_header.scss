@@ -1,0 +1,25 @@
+body {
+    padding-top: 3em;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  box-shadow: 0px 2px 3px $black;
+  height: 3em;
+  width: 100%;
+  transition: top 0.2s ease-in-out;
+  padding:1em;
+}
+.nav-up {
+    top: -3em;
+}
+
+.book-title {
+  font-size: 5vw;
+  color: white;
+  @include breakpoint(small) {
+    font-size:2vw;
+  }
+}

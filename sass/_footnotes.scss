@@ -1,0 +1,166 @@
+.footnote-content {
+    position: fixed;
+    z-index: 16;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    background-color: rgba(250, 248, 246, 0.9);
+    border-radius: 0;
+    border-top: 2px solid #333;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform;
+    -moz-transition: -moz-transform;
+    -ms-transition: -ms-transform;
+    transition: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    overflow: auto;
+}
+
+.footnote-content.active {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+
+a.footnote-marker {
+  border-bottom:none;
+}
+
+a.footnote-marker::after {
+  font-size: 140%;
+  font-weight: 100;
+  bottom: 0;
+  text-decoration: none;
+  color: lightcoral;
+}
+
+a.footnote-marker::after, a.endnote-marker::after {
+  position: relative;
+  bottom: 0.84em;
+  margin-left: 0.05em;
+  z-index: 1;
+  border-bottom: none;
+  transition: bottom 0.3s ease;
+  font-size: 0.6em;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -ms-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  content: '\27A5';
+}
+
+
+// a.footnote-marker::before,a.endnote-marker::before {
+//   content: '\27A5';
+//   width: 1.25em;
+//   height: 1.25em;
+//   border-radius: 1em;
+//   background-color: rgba(0, 200, 200, 0.9);
+//   position: absolute;
+//   right: -43%;
+//   top: 0%;
+//   z-index: -1;
+//   opacity: 0;
+//   transform: scale(0.3);
+//   transition: opacity 0.3s ease,transform 0.3s ease;
+// }
+
+a.footnote-marker:hover,a.footnote-marker:focus,a.footnote-marker.active,a.endnote-marker:hover,a.endnote-marker:focus,a.endnote-marker.active {
+  bottom: 0.6em;
+  border-bottom: none;
+}
+
+a.footnote-marker:hover::after,a.footnote-marker:focus::after,a.footnote-marker.active::after,a.endnote-marker:hover::after,a.endnote-marker:focus::after,a.endnote-marker.active::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+a.footnote-marker:hover,a.footnote-marker:focus,a.footnote-marker.active {
+  bottom: 0.3em;
+}
+
+
+.footnote-content {
+    position: fixed;
+    z-index: 16;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    background-color: rgba(250, 248, 246, 0.9);
+    border-radius: 0;
+    border-top: 2px solid #333;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform;
+    -moz-transition: -moz-transform;
+    -ms-transition: -ms-transform;
+    transition: transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    overflow: auto;
+}
+
+.footnote-content.active {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+
+
+ .glossary--item {
+    margin-bottom: 2em;
+}
+
+
+dt {
+    font-weight: 600;
+}
+
+.footnote-content .glossary--item {
+  margin: 1em;
+}
+
+.footnote-content dd {
+
+}
+
+.footnote-content dt {
+
+}

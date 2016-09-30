@@ -1,0 +1,43 @@
+
+.buy-buttons {
+  width: 90%;
+	max-width: 600px;
+  p {
+    text-align: center;
+  }
+}
+
+.button {
+     background-color: transparent;
+     border: 2px solid white;
+     text-align: center;
+     display:block;
+     padding: 0.5em;
+     border-radius: 10px;
+     color: white;
+     text-decoration: none;
+   -webkit-transition: background 0.2s, color 0.2s;
+     -moz-transition: background 0.2s, color 0.2s;
+     transition: background 0.2s, color 0.2s;
+     width: 100%;
+     margin-bottom: 1em;
+     &:hover {
+      background-color: white;
+      color: #333;
+     }
+     @include breakpoint(tiny) {
+        display: inline-block;
+        width: calc(50% - 0.5em);
+        margin-right: 1em;
+        &:last-of-type {
+          margin-right:0;
+          }
+        }
+}
+
+ .full-width {width: 100%;}
+
+
+
+
+

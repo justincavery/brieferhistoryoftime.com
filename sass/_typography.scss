@@ -1,0 +1,78 @@
+
+
+body {
+  font-family: $font-body;
+  color:$black;
+  background-color: $light-grey;
+  line-height: 1.5em;
+@include breakpoint(small) {
+  font-size: 1.4em;
+}
+@include breakpoint(medium) {
+
+}
+@include breakpoint(large) {
+
+}
+
+@include breakpoint(huge) {
+  font-size: 1.5em;
+}
+
+}
+
+
+blockquote {
+  quotes: none;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+  border-left: 5px solid #ccc;
+}
+
+p,  figure {
+  margin-bottom: 1.6em;
+}
+
+p+p, figure+p {
+  text-indent: 1.6em;
+}
+
+figure {
+    margin:0 auto $margin;
+    position:relative;
+    max-width: 600px;
+  }
+
+
+
+ figcaption {
+   border-bottom: 1px dashed #666;
+    color: #454545;
+    font-style: italic;
+    padding-bottom: 0.5em;
+ }
+
+h1, h2, h3, h4, h5 {
+font-family: $font-heading;
+position:relative;
+}
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
+}
+
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}

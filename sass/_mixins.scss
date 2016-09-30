@@ -1,0 +1,119 @@
+/*********************
+BREAKPOINTS
+
+*********************/
+
+
+ @mixin breakpoint($point) {
+   @if $point == huge {
+     @media (min-width: 80em) { @content ; }
+  }
+   @else if $point == large {
+     @media only screen and (min-width: 64em) { @content ; }
+  }
+    @else if $point == medium {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == small {
+     @media only screen and (min-width: 43.75em)  { @content ; }
+  }
+
+  @else if $point == tiny {
+     @media (min-width: 34em)  { @content ; }
+
+  }
+  @else if $point == retina {
+     @media
+     only screen and (-webkit-min-device-pixel-ratio: 2),
+     only screen and (   min--moz-device-pixel-ratio: 2),
+     only screen and (     -o-min-device-pixel-ratio: 2/1),
+     only screen and (        min-device-pixel-ratio: 2),
+     only screen and (                min-resolution: 192dpi),
+     only screen and (                min-resolution: 2dppx) { @content ; }
+  }
+}
+
+
+/****************]
+Typography
+*****************/
+
+
+@mixin title-face {
+  font-family: "proxima-nova",sans-serif;
+  font-weight: normal;
+}
+
+@mixin copy-face {
+  font-family: "ff-meta-serif-web-pro",serif;
+  font-weight: bold;
+}
+
+@mixin link {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+@mixin link-reverse {
+  color: $background-color-subtle;
+  &:hover, &:focus {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+@mixin heading-link {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: darken($primary-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+@mixin heading {
+  @include title-face;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: inherit;
+  a {
+    @include heading-link;
+  }
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 3.375em;
+  font-size:8vw;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 2.8em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.5em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.318em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.875em;
+}

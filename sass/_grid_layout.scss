@@ -1,0 +1,10 @@
+.container {
+  margin: 0em auto;
+
+  @include breakpoint(medium){
+    .container {
+      max-width: 40em;
+    }
+  }
+}
+

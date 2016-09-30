@@ -1,0 +1,25 @@
+
+$font-body: "ff-meta-serif-web-pro","helvetica nueue", helvetica, arial, sans-serif;
+$font-heading: "proxima-nova",sans-serif;
+$primary-color: #333333;
+$black: #333333;
+$light-grey: #eeeeee;
+$padding: 1.5em;
+$margin: 1em;
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  max-width: 100%
+}
+
+

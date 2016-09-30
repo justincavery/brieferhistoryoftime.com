@@ -1,0 +1,12 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+ @media print {
+   article, .container, aside {
+     display: none!important;
+   }
+
+   body:before {
+     content: "This is for online reading, not for printing. You should buy the book if you want to read a hard copy. Links to do this are on the website. Thanks for your support."
+   }
+ }
