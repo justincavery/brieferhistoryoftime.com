@@ -28,7 +28,7 @@ if ($pagenumber > 1 && $pagenumber < 12):
   echo "<a class='pagination--next' href='" . ($pagenumber + 1). "'>Next : " . $nextChapterTitle ."</a>";
 elseif($pagenumber == 12):
   echo "<a class='pagination--previous' href='" . ($pagenumber - 1). "'>Previous Chapter</a>";
-echo "<a class='pagination--next' href='/gloassary'>Glossary</a>";
+echo "<a class='pagination--next' href='/glossary'>Glossary</a>";
 elseif($pagename == 404):
   echo "";
 elseif($pagenumber == 1):
